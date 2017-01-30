@@ -1,0 +1,32 @@
+{
+  "name": "node-bp",
+  "version": "0.0.0",
+  "description": "Boilerplate for a backend server as part of wac-bp",
+  "main": "/src/index.js",
+  "scripts": {
+    "test": "''"
+  },
+  "dependencies": {
+    "async": "^1.5.2",
+    "bcryptjs": "^2.3.0",
+    "body-parser": "^1.15.0",
+    "colors": "^1.1.2",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "jwt-simple": "^0.4.1",
+    "moment": "^2.12.0",
+    "mongoose": "^4.4.6",
+    "morgan": "^1.7.0",
+    "request": "^2.69.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chad-autry/node-bp.git"
+  },
+  "author": "Chad Autry",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chad-autry/node-bp/issues"
+  },
+  "homepage": "https://github.com/chad-autry/node-bp#readme"
+}
