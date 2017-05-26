@@ -36,7 +36,7 @@ function createJWT(user) {
     exp: moment().add(14, 'days').unix(),
     displayName: user.displayName
   };
-  return jwt.encode(payload, config.TOKEN_SECRET);
+  return jwt.encode(payload, config.JWT_TOKEN_SECRET);
 }
 
 /*
@@ -50,7 +50,7 @@ app.get('/backend/googleAuth', function(req, res) {
   var params = {
     code: req.query.code,
     client_id: config.GOOGLE_CLIENT_ID,
-    client_secret: config.GOOGLE_SECRET,
+    client_secret: config.GOOGLE_AUTH_SECRET,
     redirect_uri: config.GOOGLE_REDIRECT_URI,
     grant_type: 'authorization_code'
   };
