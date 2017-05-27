@@ -13,7 +13,7 @@ var moment = require('moment');
 var mongoose = require('mongoose');
 var request = require('request');
 
-var config = require('./config');
+var config = require('../config');
 
 
 var app = express();
